@@ -1,14 +1,4 @@
-/*
-  Theme Name: TheEvent
-  Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
+/* General */
 body {
   background: #fff;
   color: #2f3138;
@@ -53,6 +43,7 @@ h6 {
 .wow {
   visibility: hidden;
 }
+
 
 /* Prelaoder */
 
@@ -99,8 +90,7 @@ h6 {
   color: #fff;
 }
 
-/* Sections Header
---------------------------------*/
+/* Sections Header  */
 
 .section-header {
   margin-bottom: 60px;
@@ -140,9 +130,7 @@ h6 {
   background-color: #f6f7fd;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* Header  */
 
 #header {
   height: 90px;
@@ -189,11 +177,7 @@ h6 {
   max-height: 40px;
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-
-/* Nav Menu Essentials */
+/* Menu de Navegacion  */
 
 .nav-menu,
 .nav-menu * {
@@ -233,7 +217,7 @@ h6 {
   min-width: 180px;
 }
 
-/* Nav Menu Arrows */
+/* Arrows  */
 
 .sf-arrows .sf-with-ul {
   padding-right: 30px;
@@ -252,14 +236,14 @@ h6 {
   content: "\f105";
 }
 
-/* Nav Meu Container */
+/* Container del Menu  */
 
 #nav-menu-container {
   float: right;
   margin: 0;
 }
 
-/* Nav Meu Styling */
+/* Style Menu  */
 
 .nav-menu a {
   padding: 8px;
@@ -288,7 +272,7 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0089cb;
+  background-color: #3bb98a;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -354,7 +338,7 @@ h6 {
   margin: 0;
 }
 
-/* Mobile Nav Toggle */
+/* Toggle  */
 
 #mobile-nav-toggle {
   position: fixed;
@@ -375,7 +359,7 @@ h6 {
   color: #fff;
 }
 
-/* Mobile Nav Styling */
+/* Style  */
 
 #mobile-nav {
   position: fixed;
@@ -448,7 +432,7 @@ h6 {
   display: none;
 }
 
-/* Mobile Nav body classes */
+/* Class  */
 
 body.mobile-nav-active {
   overflow: hidden;
@@ -462,9 +446,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Intro Section
---------------------------------------------------------------*/
+/* Inicio  */
 
 #intro {
   width: 100%;
@@ -615,11 +597,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #0089cb;
+  border: 2px solid #3bb98a;
 }
 
 #intro .about-btn:hover {
-  background: #0089cb;
+  background: #3bb98a;
   color: #fff;
 }
 
@@ -651,9 +633,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
+/* Seccion Acerca de  */
 
 #about {
   background: url("../img/about-bg.jpg");
@@ -699,12 +679,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
-
-
-
-/*--------------------------------------------------------------
-# Schedule Section
---------------------------------------------------------------*/
+/* Seccion de Agenda  */
 
 #schedule {
   padding: 60px 0 60px 0;
@@ -733,7 +708,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #0089cb;
+  background-color: #3bb98a;
   color: #fff;
 }
 
@@ -801,9 +776,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-/*--------------------------------------------------------------
-# Gallery Section
---------------------------------------------------------------*/
+/* Seccion de la Galería  */
 
 #gallery {
   padding: 60px;
@@ -831,7 +804,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .owl-dot.active {
-  background-color: #0089cb;
+  background-color: #3bb98a;
 }
 
 #gallery .gallery-carousel .owl-stage-outer {
@@ -839,7 +812,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .gallery-carousel .center {
-  border: 6px solid #0089cb;
+  border: 6px solid #3bb98a;
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
@@ -847,9 +820,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 1;
 }
 
-/*--------------------------------------------------------------
-# Sponsors Section
---------------------------------------------------------------*/
+/* Seccion de Patrocinadores  */
 
 #sponsors {
   padding: 60px 0;
@@ -890,19 +861,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-/*--------------------------------------------------------------
-# Subscribe Section
---------------------------------------------------------------*/
+/* Seccion de Registro  */
 
-#subscribe {
+#register {
   padding: 60px;
-  background: url(../img/subscribe-bg.jpg) center center no-repeat;
+  background: url(../img/register-bg.jpg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
 }
 
-#subscribe:before {
+#register:before {
   content: "";
   background: rgba(6, 12, 34, 0.6);
   position: absolute;
@@ -912,12 +881,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
 }
 
-#subscribe .section-header h2,
-#subscribe p {
+#register .section-header h2,
+#register p {
   color: #fff;
 }
 
-#subscribe input {
+#register input {
   background: #fff;
   color: #060c22;
   border: 0;
@@ -928,24 +897,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
-#subscribe button {
+#register button {
   border: 0;
-  padding: 9px 25px;
+  padding: 15px 30px;
   cursor: pointer;
   background: #0089cb;
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
-  font-size: 14px;
+  font-size: 20px;
   border-radius: 50px;
 }
 
-#subscribe button:hover {
-  background: #e0072f;
+#register button:hover {
+  background: #3bb98a;
 }
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+
+/* Footer  */
 
 #footer {
   background: #101522;
@@ -1093,12 +1061,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ddd;
 }
 
-/*--------------------------------------------------------------
-# Responsive Media Queries
---------------------------------------------------------------*/
+/* Media Queries  */
 
 @media (min-width: 767px) {
-  #subscribe input {
+  #register input {
     min-width: 400px;
   }
 }
@@ -1131,7 +1097,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-attachment: fixed;
   }
 
-  #subscribe {
+  #register {
     background-attachment: fixed;
   }
 }
@@ -1212,7 +1178,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 460px) {
-  #subscribe button {
+  #register button {
     margin-top: 10px;
   }
 }
