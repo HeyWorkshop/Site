@@ -80,13 +80,13 @@ h6 {
 }
 
 .back-to-top:focus {
-  background: #e0072f;
+  background: #0089cb;
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #e0072f;
+  background: #0089cb;
   color: #fff;
 }
 
@@ -111,7 +111,7 @@ h6 {
 
 .section-header h2 {
   font-size: 36px;
-  text-transform: uppercase;
+  text-transform: none;
   text-align: center;
   font-weight: 700;
   margin-bottom: 10px;
@@ -159,7 +159,7 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 #header #logo h1 span {
@@ -286,10 +286,10 @@ h6 {
 
 .nav-menu li.registro a {
   color: #fff;
-  background: #0089cb;
+  background: #3bb98a;
   padding: 7px 22px;
   border-radius: 50px;
-  border: 2px solid #0089cb;
+  border: 2px solid #3bb98a;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   margin-left: 8px;
@@ -492,10 +492,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro h1 {
   color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 56px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 #intro h1 span {
@@ -636,7 +636,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Seccion Acerca de  */
 
 #about {
-  background: url("../img/about-bg.jpg");
+  background-color: #040919;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -646,7 +646,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -665,7 +664,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about h3 {
   font-size: 18px;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 10px;
   color: #fff;
 }
@@ -912,6 +911,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 #register button:hover {
   background: #3bb98a;
 }
+#register .register-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #3bb98a;
+}
+
+#register .register-btn:hover {
+  background: #3bb98a;
+  color: #fff;
+}
+
 
 /* Footer  */
 
@@ -978,7 +999,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   font-weight: bold;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: none;
   position: relative;
   padding-bottom: 12px;
   border-bottom: 2px solid #0089cb;
