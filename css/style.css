@@ -849,8 +849,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 } */
 
 #sponsors .sponsors-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
+  /* border-top: 1px solid #e0e5fa;
+  border-left: 1px solid #e0e5fa; */
   margin-bottom: 30px;
 }
 
@@ -866,8 +866,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-right: 1px solid #e0e5fa;
-  border-bottom: 1px solid #e0e5fa;
+  border-right: 1px solid #f6f7fd;
+  border-bottom: 1px solid #f6f7fd;
+  border-left: 1px solid #f6f7fd;
+  border-top: 1px solid #f6f7fd;
   background: rgba(255, 255, 255, 0.5);
   height: 160px;
   width: 100%;
