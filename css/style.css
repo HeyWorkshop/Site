@@ -844,14 +844,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Seccion de Patrocinadores  */
 
-/* #sponsors {
-  padding: 60px 0;
-} */
+#sponsors {
+  padding-top: 50px;
+}
 
 #sponsors .sponsors-wrap {
   /* border-top: 1px solid #e0e5fa;
   border-left: 1px solid #e0e5fa; */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 #sponsors .img-fluid {
@@ -887,6 +887,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sección del Team  */
 #team {
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 #team .row {
   padding-bottom: 20px;
