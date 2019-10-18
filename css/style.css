@@ -624,6 +624,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #3bb98a;
 }
 
+.environment-btn {
+  background: white;
+  border-radius: 10px;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  margin-top: 7px;
+  padding: 8px;
+  width: 300px;
+}
+
 #intro .about-btn:hover {
   background: #3bb98a;
   color: #fff;
@@ -893,11 +906,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 20px;
 }
 #team h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
-.our-team{
+.our-team {
   padding: 30px 0 25px;
   background-color: white;
   text-align: center;
@@ -905,8 +918,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   border: 1px solid #e0e5fa;
 }
-.our-team .pic{
-  display:inline-block;
+.our-team .pic {
+  display: inline-block;
   width: 130px;
   height: 130px;
   margin-bottom: 35px;
@@ -929,21 +942,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 0;
   z-index: -1;
 } */
-.our-team .pic img{
+.our-team .pic img {
   width: 100%;
   height: auto;
   border-radius: 50%;
   transform: scale(1);
   transition: all 0.9s ease 0s;
 }
-.our-team:hover .pic img{
+.our-team:hover .pic img {
   box-shadow: 0 0 0 14px #5cc49e;
   transform: scale(0.9);
 }
-.our-team .team-content{
+.our-team .team-content {
   margin-bottom: 30px;
 }
-.our-team .title{
+.our-team .title {
   font-size: 22px;
   font-weight: 700;
   color: #4e5052;
@@ -951,43 +964,41 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: capitalize;
   margin-bottom: 5px;
 }
-.our-team .post{
+.our-team .post {
   display: block;
   font-size: 15px;
   color: #4e5052;
-  text-transform: capitalize; 
+  text-transform: capitalize;
 }
-.our-team .social{
+.our-team .social {
   width: 100%;
   padding: 0;
-  margin:0;
+  margin: 0;
   background: #5cc49e;
   position: absolute;
   bottom: 0;
   left: 0;
   transition: all 0.5s ease 0s;
-
 }
 
 /* .our-team:hover .social{
   bottom: 0;
 } */
-.our-team .social li{
-display: inline-block;
+.our-team .social li {
+  display: inline-block;
 }
-.our-team .social li a{
+.our-team .social li a {
   display: block;
   padding: 10px;
   font-size: 17px;
-  color: white;transition: all 0.5s ease 0s;
-
- }
- .our-team .social li a:hover{
-     color: #3bb98a;
-     background: #f7f5ec;
-     text-decoration: none;
-
- }
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+.our-team .social li a:hover {
+  color: #3bb98a;
+  background: #f7f5ec;
+  text-decoration: none;
+}
 /* Seccion de Registro  */
 
 #register {
