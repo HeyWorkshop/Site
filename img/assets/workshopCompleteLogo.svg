@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 922 236" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-111.153,-1063.49)">
+        <g id="Color-Workshop" serif:id="Color Workshop" transform="matrix(0.466064,0,0,0.466064,-186.808,845.741)">
+            <g id="Logo" transform="matrix(1,0,0,1,-419.547,0)">
+                <g transform="matrix(1.21003,0,0,1.21003,-268.238,-151.224)">
+                    <path d="M1279.5,524.719L1448.62,622.359L1448.62,817.641L1279.5,915.281L1110.38,817.641L1110.38,622.359L1279.5,524.719Z" style="fill:none;stroke:rgb(48,150,255);stroke-width:27.27px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,0,-33.082)">
+                    <path d="M1264.79,626.482C1267.67,620.722 1273.56,617.084 1280,617.084C1286.44,617.084 1292.33,620.722 1295.21,626.482C1320.04,676.152 1368.82,773.711 1391.63,819.327C1394.26,824.597 1393.98,830.856 1390.88,835.868C1387.79,840.881 1382.32,843.931 1376.42,843.931C1328.74,843.931 1231.26,843.931 1183.58,843.931C1177.68,843.931 1172.21,840.881 1169.12,835.868C1166.02,830.856 1165.74,824.597 1168.37,819.327C1191.18,773.711 1239.96,676.152 1264.79,626.482Z" style="fill:none;stroke:rgb(40,224,166);stroke-width:16px;"/>
+                </g>
+                <g transform="matrix(0.451199,0,0,0.451199,702.465,384.629)">
+                    <path d="M1265.17,625.72C1267.98,620.104 1273.72,616.557 1280,616.557C1286.28,616.557 1292.02,620.104 1294.83,625.72C1319.65,675.371 1369.15,774.363 1391.94,819.943C1394.51,825.082 1394.23,831.184 1391.21,836.07C1388.19,840.957 1382.86,843.931 1377.11,843.931C1329.45,843.931 1230.55,843.931 1182.89,843.931C1177.14,843.931 1171.81,840.957 1168.79,836.07C1165.77,831.184 1165.49,825.082 1168.06,819.943C1190.85,774.363 1240.35,675.371 1265.17,625.72Z" style="fill:rgb(48,150,255);"/>
+                </g>
+            </g>
+            <g transform="matrix(1.95266,0,0,1.95266,-1230.19,-529.172)">
+                <text x="1232.52px" y="681.258px" style="font-family:'LucidaGrande-Bold', 'Lucida Grande', sans-serif;font-weight:600;font-size:144.33px;fill:rgb(48,150,255);">Workshop</text>
+            </g>
+        </g>
+    </g>
+</svg>
