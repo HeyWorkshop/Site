@@ -338,7 +338,11 @@ body {
   bottom: -10%;
   right: 0;
 }
-
+@media screen and (max-width: 600px) {
+  .main__contact__btn:link, .main__contact__btn:visited {
+    padding: 1rem 1rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   .main__contact svg {
     display: block;
