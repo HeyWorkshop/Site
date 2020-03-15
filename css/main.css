@@ -115,6 +115,13 @@ body {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
+
+@media screen and (max-width: 500px) {
+  .intership__title {
+    font-size: 2rem;
+  }
+}
+
 .intership__title--blue {
   color: #0089CB;
 }
@@ -347,10 +354,12 @@ body {
   .main__contact__btn:link, .main__contact__btn:visited {
     padding: 1rem 1rem;
   }
+  .main__contact svg {
+    display: none;
+  }
 }
 @media screen and (max-width: 1024px) {
   .main__contact svg {
-    display: block;
     position: absolute;
     bottom: -10%;
     width: 250px;
