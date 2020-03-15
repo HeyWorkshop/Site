@@ -97,7 +97,12 @@ body {
 .main__header__btn:link:hover, .main__header__btn:visited:hover {
   box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.2);
 }
+@media screen and (max-width: 400px) {
+  .main__header__btn:link, .main__header__btn:visited {
+    padding: .3rem .3rem;
 
+  }
+}
 .intership {
   width: 100%;
   padding: 3rem;
