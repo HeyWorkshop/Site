@@ -3,8 +3,8 @@
 /* FUNCTIONS */
 
 function toggleMenu() {
-    nav.classList.toggle('nav--active');
-    burgerMenu.classList.toggle('burger--active');
+  nav.classList.toggle('nav--active');
+  burgerMenu.classList.toggle('burger--active');
 }
 
 /* EVENT LISTENERS */
