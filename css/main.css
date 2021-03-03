@@ -3,11 +3,6 @@ html {
   -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 12px;
-  }
-}
 
 *,
 *::before,
@@ -82,6 +77,15 @@ body {
   font-weight: 300;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 1024px) {
+  .dots p {
+    font-size: 1rem;
+  }
+  .header__left__content {
+    font-size: 15px;
+  }
+}
+
 .header__right {
   width: 100%;
   padding: 2rem;
@@ -661,6 +665,7 @@ body {
   padding: 10px;
   height: auto;
   width: 200px;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
