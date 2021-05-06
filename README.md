@@ -29,7 +29,7 @@ gitmoji -c
 ```
 #### Push them
 ```bash
-git push origin landing2021
+git push my-destination landing2021
 ```
 
 Made with 💜 by Workshop Team
