@@ -1,0 +1,21 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Landing page for Workshop - 2021",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cls && echo '🌷 Dev mode activado 🌷' && pug ./src/index.pug -P -w -o ./dist/",
+    "build": "cls && echo '🔨 Construyendo el sitio 🔨' && pug ./src/index.pug -o ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeyWorkshop/Site.git"
+  },
+  "keywords": [
+    "pug"
+  ],
+  "bugs": {
+    "url": "https://github.com/HeyWorkshop/Site/issues"
+  },
+  "homepage": "https://github.com/HeyWorkshop/Site#readme"
+}
