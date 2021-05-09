@@ -4,8 +4,8 @@
   "description": "Landing page for Workshop - 2021",
   "main": "index.js",
   "scripts": {
-    "dev": "cls && echo '🌷 Dev mode activado 🌷' && pug ./src/index.pug -P -w -o ./dist/",
-    "build": "cls && echo '🔨 Construyendo el sitio 🔨' && pug ./src/index.pug -o ./dist/"
+    "dev": "pug ./src/index.pug -P -w -o ./dist/",
+    "build": "pug ./src/index.pug -o ./dist/"
   },
   "repository": {
     "type": "git",

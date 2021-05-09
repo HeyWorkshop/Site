@@ -1,5 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
 .hello-workshopians{
     font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
     padding: 50px;
 }
+
+/*BG*/
+.b-royalBlue{
+    background-color: #5F54DC;
+}
+
+.b-blackRussian{
+    background-color: #1E1E24;
+}
+
+/*FC*/
+.text-royalBlue{
+    color: #5F54DC;
+}
+
+.text-wildWatermelon{
+    color: #F45B69;
+}
+
+.text-roseWhite{
+    color: #F7F4F3;
+}
+
+/*Contacto*/
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }
+
+
+/*Intership*/
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }
