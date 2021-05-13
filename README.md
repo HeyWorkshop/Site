@@ -1,4 +1,4 @@
-### To render & code the pug site:
+### 🎈 To render & code the pug site:
 
 #### Install pug-cli
 
