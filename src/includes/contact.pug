@@ -1,0 +1,26 @@
+//- includes/contact.pug
+mixin link(href, text)
+  li
+    a(href=href)
+      i&attributes(attributes)
+      span=text
+
+section.contact
+  .container
+    p.message
+      | ¿Te gustaria dar un 
+      span.first taller
+      | ? ¿Ser parte del 
+      span.second equipo
+      | ? ¿O participar en alguna de nuestras actividades?
+    ul
+        +link("#", "GitHub")(class="bi bi-github")
+        +link("#", "Instagram")(class="bi bi-instagram")
+        +link("#", "LinkedIn")(class="bi bi-linkedin")
+        +link("#", "Facebook")(class="bi bi-facebook")
+        +link("#", "Email")(class="bi bi-envelope")
+  p.subtext
+    span.first Developed
+    |  and 
+    span.second Designed
+    |  by Workshop team
