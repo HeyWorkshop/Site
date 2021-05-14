@@ -4,8 +4,14 @@
   "description": "Landing page for Workshop - 2021",
   "main": "index.js",
   "scripts": {
-    "dev": "pug ./src/index.pug -P -w -o ./dist/",
-    "build": "pug ./src/index.pug -o ./dist/"
+    "msg": "echo \"Keep it cool, my budie 🐊\"",
+    "msg-1": "echo \"Building... 🦑\"",
+    "dev-pug": "pug ./src/index.pug -P -w -o ./dist/",
+    "build-pug": "pug ./src/index.pug -o ./dist/",
+    "dev-sass": "node-sass -w ./src/scss -o ./dist/assets/css",
+    "build-sass": "node-sass ./src/scss -o ./dist/assets/css --output-style compressed",
+    "dev": "npm-run-all -s msg -p dev-sass dev-pug",
+    "build": "npm-run-all -s msg-1 build-sass build-pug"
   },
   "repository": {
     "type": "git",
@@ -17,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/HeyWorkshop/Site/issues"
   },
-  "homepage": "https://github.com/HeyWorkshop/Site#readme"
+  "homepage": "https://github.com/HeyWorkshop/Site#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "pug-cli": "^1.0.0-alpha6"
+  }
 }

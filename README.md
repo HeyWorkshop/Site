@@ -1,9 +1,9 @@
 ### 🎈 To render & code the pug site:
 
-#### Install pug-cli
+#### Install the dependencies
 
 ```bash
-npm i -g pug-cli
+npm i
 ```
 
 #### Dev mode
