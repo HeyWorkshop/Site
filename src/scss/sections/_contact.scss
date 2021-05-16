@@ -52,7 +52,7 @@ section.contact {
   }
 }
 
-@include breakpoint(md) {
+@include breakpoint('md') {
   section.contact {
     position: relative;
     justify-content: center;
@@ -109,7 +109,7 @@ section.contact {
   }
 }
 
-@include breakpoint(xl) {
+@include breakpoint('xl') {
   section.contact {
     .container {
       width: 1000px;
