@@ -1,5 +1,5 @@
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   background: $background;
   margin: 0;
 }
@@ -11,4 +11,26 @@ a {
 section {
   padding: 0 2rem;
   height: 100vh;
+}
+
+/*BG*/
+.b-royalBlue {
+  background-color: #5f54dc;
+}
+
+.b-blackRussian {
+  background-color: #1e1e24;
+}
+
+/*FC*/
+.text-royalBlue {
+  color: #5f54dc;
+}
+
+.text-wildWatermelon {
+  color: #f45b69;
+}
+
+.text-roseWhite {
+  color: #f7f4f3;
 }

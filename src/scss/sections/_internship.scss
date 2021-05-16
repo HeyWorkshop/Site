@@ -1,0 +1,51 @@
+section#internship {
+  display: flex;
+  flex-direction: column;
+
+  .text {
+    padding: 5%;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 3rem;
+  }
+  p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+  }
+  span {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 576px) {
+  #internship img {
+    width: 225px;
+    height: auto;
+    align-self: center;
+  }
+}
+
+@include breakpoint("sm") {
+  #internship img {
+    width: 40%;
+    height: auto;
+    align-self: center;
+    padding-top: 30px;
+  }
+}
+
+@include breakpoint("md") {
+  #internship img {
+    width: 30%;
+    height: auto;
+    padding-top: 30px;
+  }
+  #internship {
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    flex-direction: row;
+  }
+}
