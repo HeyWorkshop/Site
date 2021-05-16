@@ -1,26 +1,9 @@
 section#internship {
   display: flex;
   flex-direction: column;
-
-  .text {
-    padding: 5%;
-    margin: 0;
-  }
-
-  h1 {
-    font-family: "Work Sans", sans-serif;
-    font-size: 3rem;
-  }
-  p {
-    font-family: "Inter", sans-serif;
-    font-size: 1.25rem;
-  }
-  span {
-    font-weight: 600;
-  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 640px) {
   #internship img {
     width: 225px;
     height: auto;
@@ -30,7 +13,7 @@ section#internship {
 
 @include breakpoint("sm") {
   #internship img {
-    width: 40%;
+    width: 250px;
     height: auto;
     align-self: center;
     padding-top: 30px;
@@ -38,14 +21,36 @@ section#internship {
 }
 
 @include breakpoint("md") {
+  #internship .text {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    width: 900px;
+    h2 {
+      font-size: 1.8rem;
+      font-style: 700;
+    }
+  }
+
   #internship img {
-    width: 30%;
+    width: 400px;
     height: auto;
     padding-top: 30px;
   }
   #internship {
-    /* flex-direction: row-reverse; */
+    // flex-direction: row-reverse;
     justify-content: center;
     flex-direction: row;
+    align-items: center;
+  }
+}
+
+@include breakpoint("xl") {
+  .text {
+    font-size: 2.3rem;
+    width: 1250px;
+    h2 {
+      font-size: 2.6rem;
+      font-style: 700;
+    }
   }
 }
