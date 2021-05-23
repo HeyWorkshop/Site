@@ -1,0 +1,42 @@
+.button {
+  -webkit-tap-highlight-color: transparent;
+  background: rgba($wildWatermelon, 0.1);
+  color: $wildWatermelon;
+  transition: background-color 0.1s, color 0.1s, box-shadow 0.05s;
+  display: inline-block;
+  &:hover {
+    background: $wildWatermelon;
+    color: $offWhite;
+  }
+  &:active {
+    box-shadow: 0 0 0 2px $offWhite;
+  }
+}
+.button {
+  &--icon {
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    line-height: 205%;
+    i {
+      font-size: 1em;
+    }
+  }
+  &--text {
+    border-radius: 0.5em;
+    padding: 0.3em 0;
+    span {
+      font-size: 0.8em;
+      margin-left: 0.5em;
+      font-weight: 500;
+    }
+    i {
+      font-size: 1em;
+    }
+    .bi::before {
+      vertical-align: middle;
+      line-height: normal;
+    }
+  }
+}
