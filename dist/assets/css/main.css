@@ -159,30 +159,29 @@ section {
   color: #f7f4f3; }
 
 section#internship {
+  height: auto;
   display: flex;
   flex-direction: column; }
-
-@media (max-width: 640px) {
-  #internship img {
-    width: 225px;
-    height: auto;
-    align-self: center; } }
-
-@media (min-width: 640px) {
-  #internship img {
+  section#internship .text {
+    font-size: 1.1rem;
+    line-height: 110%; }
+    section#internship .text h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 20px 0px; }
+  section#internship img {
+    align-self: center;
     width: 250px;
     height: auto;
-    align-self: center;
-    padding-top: 30px; } }
+    padding: 1rem; }
 
 @media (min-width: 768px) {
   #internship .text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 0 auto;
-    width: 900px; }
+    width: 700px; }
     #internship .text h2 {
-      font-size: 1.8rem;
-      font-style: 700; }
+      font-size: 2.2rem; }
   #internship img {
     width: 400px;
     height: auto;
@@ -193,12 +192,12 @@ section#internship {
     align-items: center; } }
 
 @media (min-width: 1280px) {
-  .text {
+  flex-direction: column;
+  #internship .text {
     font-size: 2.3rem;
     width: 1250px; }
-    .text h2 {
-      font-size: 2.6rem;
-      font-style: 700; } }
+    #internship .text h2 {
+      font-size: 2.6rem; } }
 
 section.contact {
   display: flex;
