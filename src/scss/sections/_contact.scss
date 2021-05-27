@@ -9,6 +9,7 @@ $-leading-md: 2rem;
 }
 
 .contact {
+  position: relative;
   padding: 2.25rem;
   .contact__header,
   .contact__footer {
@@ -51,7 +52,7 @@ $-leading-md: 2rem;
   }
 }
 
-@include breakpoint('md') {
+@include breakpoint("md") {
   .contact {
     height: 100vh;
     padding: 0 5rem;
@@ -98,7 +99,7 @@ $-leading-md: 2rem;
     }
     // Bottom left gizmo
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       bottom: 0;
@@ -109,7 +110,7 @@ $-leading-md: 2rem;
   }
 }
 
-@include breakpoint('lg') {
+@include breakpoint("lg") {
   .contact {
     .contact__container {
       width: 870px;
@@ -119,7 +120,7 @@ $-leading-md: 2rem;
   }
 }
 
-@include breakpoint('xl') {
+@include breakpoint("xl") {
   .contact {
     .contact__container {
       width: 1000px;
