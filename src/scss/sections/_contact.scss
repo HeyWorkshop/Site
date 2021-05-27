@@ -22,12 +22,13 @@ $-leading-md: 2rem;
   .contact__linksList {
     margin: 2.25rem auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
     max-width: 205px;
-    .item2 {
+    .item1 {
       justify-self: start;
     }
+    .item2,
     .item3 {
       justify-self: center;
     }
@@ -36,9 +37,8 @@ $-leading-md: 2rem;
     }
     .item5 {
       grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column-end: 5;
     }
-    .item1,
     .item6 {
       display: none;
     }
@@ -52,14 +52,13 @@ $-leading-md: 2rem;
   }
 }
 
-@include breakpoint("md") {
+@include breakpoint('md') {
   .contact {
     height: 100vh;
     padding: 0 5rem;
     // Setup initial overrides
     .contact__linksList {
       max-width: none;
-      .item1,
       .item6 {
         display: list-item;
       }
@@ -99,7 +98,7 @@ $-leading-md: 2rem;
     }
     // Bottom left gizmo
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: 0;
@@ -110,7 +109,7 @@ $-leading-md: 2rem;
   }
 }
 
-@include breakpoint("lg") {
+@include breakpoint('lg') {
   .contact {
     .contact__container {
       width: 870px;
@@ -120,7 +119,7 @@ $-leading-md: 2rem;
   }
 }
 
-@include breakpoint("xl") {
+@include breakpoint('xl') {
   .contact {
     .contact__container {
       width: 1000px;
