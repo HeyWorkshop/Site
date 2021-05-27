@@ -1,16 +1,19 @@
 body {
   font-family: "Work Sans", sans-serif;
   background: $background;
-  margin: 0;
+  color: $offWhite;
 }
-
 a {
   text-decoration: none;
 }
-
-section {
-  padding: 0 2rem;
-  height: 100vh;
+.text-royalBlue {
+  color: $royalBlue;
+}
+.text-wildWatermelon {
+  color: $wildWatermelon;
+}
+.font-bold {
+  font-weight: 700;
 }
 
 /*BG*/

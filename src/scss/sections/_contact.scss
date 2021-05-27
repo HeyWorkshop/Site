@@ -1,134 +1,147 @@
-section.contact {
-  display: flex;
-  flex-direction: column;
-  p {
-    margin: 0;
-    color: $offwhite;
-  }
-  .first {
-    color: $royalBlue;
-  }
-  .second {
-    color: $wildWatermelon;
-  }
-  .message {
-    font-size: 1.25rem;
-    padding-top: 1rem;
-  }
-  .subtext {
-    padding-bottom: 1rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-top: auto;
-    padding-bottom: 1.5rem;
-  }
+$-font-sm: 1.25rem;
+$-leading-sm: 1.25rem;
+$-font-md: 1.8rem;
+$-leading-md: 2rem;
+@mixin -gizmoSize($width) {
+  $ratio: 280px/169px;
+  width: $width;
+  height: $width * $ratio;
+}
 
-  li {
-    margin-top: 1rem;
-    &:not(:last-child) {
-      margin-bottom: 1rem;
+.contact {
+  padding: 2.25rem;
+  .contact__header,
+  .contact__footer {
+    display: none;
+  }
+  .contact__message {
+    font-size: $-font-sm;
+    line-height: $-leading-sm;
+  }
+  .contact__linksList {
+    margin: 2.25rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+    max-width: 205px;
+    .item2 {
+      justify-self: start;
+    }
+    .item3 {
+      justify-self: center;
+    }
+    .item4 {
+      justify-self: end;
+    }
+    .item5 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    .item1,
+    .item6 {
+      display: none;
     }
   }
-  a {
-    -webkit-tap-highlight-color: transparent;
-    background: rgba($wildWatermelon, 0.25);
-    border-radius: 0.3rem;
-    display: block;
-    text-align: center;
-    color: $wildWatermelon;
-    padding: 0.5rem 0;
-    transition: background-color 0.1s, box-shadow 0.05s;
-    span {
-      font-weight: 500;
-      margin-left: 0.75rem;
-    }
-    &:hover {
-      background: $wildWatermelon;
-      color: $offwhite;
-    }
-    &:active {
-      box-shadow: 0 0 0 2px $offwhite;
+  .button {
+    font-size: $-font-sm;
+    &--text {
+      width: 100%;
+      text-align: center;
     }
   }
 }
 
 @include breakpoint('md') {
-  section.contact {
-    position: relative;
-    justify-content: center;
-    .container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    .message {
-      font-size: 2rem;
-      padding-top: 0;
-    }
-    .subtext {
-      font-size: 1rem;
-      font-weight: bold;
-      position: absolute;
-      padding-bottom: 2rem;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-    ul {
-      display: flex;
-      width: 65%;
-      margin: 2rem auto 0 auto;
-      justify-content: space-around;
-    }
-    a {
-      background: rgba($wildWatermelon, 0.1);
-      border-radius: 50%;
-      width: 3rem;
-      height: 3rem;
-      padding: 0;
-      font-size: 1.5rem;
-      line-height: 210%;
-      span {
+  .contact {
+    height: 100vh;
+    padding: 0 5rem;
+    // Setup initial overrides
+    .contact__linksList {
+      max-width: none;
+      .item1,
+      .item6 {
+        display: list-item;
+      }
+      .item5 {
         display: none;
       }
     }
-
-    /*Bottom Left Gizmo*/
-    &::after {
+    // Start
+    .contact__container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact__header {
+      display: block;
+      flex: 1;
+    }
+    .contact__footer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: center;
+      p {
+        padding: 3rem 0;
+      }
+    }
+    .contact__message {
+      font-size: $-font-md;
+      line-height: $-leading-md;
+    }
+    .contact__linksList {
+      display: flex;
+      justify-content: space-around;
+      width: 400px;
+      margin-bottom: 0;
+    }
+    // Bottom left gizmo
+    &::before {
       content: '';
       position: absolute;
-      width: 84px;
-      height: 111px;
       left: 0;
       bottom: 0;
       background: url(../img/gizmo.svg);
-      z-index: 99;
+      z-index: -99;
+      @include -gizmoSize(70px);
+    }
+  }
+}
+
+@include breakpoint('lg') {
+  .contact {
+    .contact__container {
+      width: 870px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
 
 @include breakpoint('xl') {
-  section.contact {
-    .container {
+  .contact {
+    .contact__container {
       width: 1000px;
     }
-    .message {
+    .contact__message {
       font-size: 2.8rem;
+      line-height: 110%;
     }
-    .subtext {
-      font-size: 1.25rem;
+    .contact__linksList {
+      width: 60%;
+      margin-top: 3.75rem;
+      .button {
+        font-size: 2rem;
+      }
     }
-    a {
-      line-height: 220%;
-      font-size: 1.8rem;
-      height: 3.8rem;
-      width: 3.8rem;
+    .contact__footer {
+      p {
+        font-size: $-font-sm;
+      }
     }
-    &::after {
-      width: 120px;
-      height: 159px;
+    &::before {
+      @include -gizmoSize(120px);
     }
   }
 }
