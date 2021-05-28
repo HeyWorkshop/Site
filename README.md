@@ -26,22 +26,9 @@ npm run build
 npm i -g gitmoji-cli
 ```
 
-#### Add your changes
-
+#### Run -done- script
 ```bash
-git add .
-```
-
-#### Start gitmoji-cli & follow the instructions
-
-```bash
-gitmoji -c
-```
-
-#### Push them
-
-```bash
-git push origin landing2021
+npm run done
 ```
 
 Made with 💜 by Workshop Team
