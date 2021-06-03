@@ -1,5 +1,5 @@
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background: $background;
   color: $offWhite;
 }
@@ -17,10 +17,12 @@ a {
 }
 
 /*BG*/
-.b-royalBlue {
+.bg-royalBlue {
   background-color: #5f54dc;
 }
-
+.bg-darkCharcoal {
+  background-color: #313137;
+}
 .b-blackRussian {
   background-color: #1e1e24;
 }

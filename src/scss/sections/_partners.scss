@@ -1,0 +1,85 @@
+.partners {
+  padding: 2.25rem;
+  h2 {
+    font-size: 2rem;
+  }
+}
+.partners__grid {
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.75em, 1fr));
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.partners__card {
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8em;
+  box-sizing: border-box;
+  width: 100%;
+  height: 5.625em;
+  .card__image {
+    box-sizing: inherit;
+    object-fit: contain;
+    width: 6.875em;
+    height: 80%;
+  }
+  &--sm {
+    padding: 1.8em;
+  }
+  &--md {
+    padding: 1.25em;
+  }
+  &--lg {
+    padding: 0.8em;
+  }
+}
+
+@include breakpoint('md') {
+  .partners {
+    padding: 5rem 4rem;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  .partners__grid {
+    grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
+    .partners__card {
+      height: 6em;
+    }
+  }
+}
+
+@include breakpoint('lg') {
+  .partners {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .partners__container {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint('xl') {
+  .partners {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    .partners__container {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .partners__grid {
+    grid-template-columns: repeat(4, minmax(11em, 1fr));
+    font-size: 1.25rem;
+    row-gap: 1.25rem;
+    column-gap: 1.25rem;
+    .partners__card {
+      height: 8em;
+    }
+  }
+}
