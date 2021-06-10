@@ -1,0 +1,81 @@
+section#main {
+  height: auto;
+  background: url(../img/Sally.svg) no-repeat;
+  main {
+    padding: 5% 1rem;
+    position: relative;
+    .main__left {
+      margin: 0 10%;
+      height: auto;
+
+      h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        padding: 20px 0;
+      }
+      p {
+        font-size: 0.9rem;
+        line-height: 120%;
+        padding-bottom: 25px;
+      }
+      a {
+        justify-content: center;
+        padding: 10px 20px;
+        font-weight: 700;
+        -webkit-tap-highlight-color: transparent;
+        background: rgba(royalBlue, 0.1);
+        color: royalblue;
+        transition: background-color 0.1s, color 0.1s, box-shadow 0.05s;
+        display: inline-block;
+        &:hover {
+          background: royalblue;
+          color: $offWhite;
+        }
+        &:active {
+          box-shadow: 0 0 0 2px $offWhite;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint("md") {
+  section#main {
+    background-image: none;
+    main {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 2rem;
+      padding: 5% 2rem;
+
+      .main__left {
+        width: 40%;
+        margin: 10% 0;
+        h1 {
+          font-size: 5rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+      img {
+        //  display: block;
+        padding: 5%;
+        opacity: 1;
+        transition: ease 0.4s;
+        width: 30%;
+        min-width: 200px;
+        height: auto;
+        &:hover {
+          transition: ease 0.4s;
+          transform: translate(0, -30px);
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint("xl") {
+  // section#main {
+  // }
+}

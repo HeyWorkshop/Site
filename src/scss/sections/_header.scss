@@ -1,0 +1,56 @@
+section#header {
+  header {
+    padding: 2.25rem 3rem;
+    // display: inline;
+    justify-content: space-between;
+    .header__logo img {
+      align-self: center;
+      width: 30px;
+      height: auto;
+    }
+    nav {
+      .nav__desktop {
+        display: none;
+      }
+
+      .nav__mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+@include breakpoint("md") {
+  section#header {
+    background-image: none;
+    header {
+      padding: 2.25rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      .header__logo img {
+        align-self: center;
+        width: 30px;
+        height: auto;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        .nav__desktop {
+          display: inline-block;
+        }
+        a {
+          padding: 1rem 1.5rem;
+          font-weight: 600;
+          &:not(:first-child):not(:last-child) {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint("xl") {
+  //   section#main {
+  //   }
+}
