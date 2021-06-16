@@ -1,4 +1,4 @@
-.partners {
+#partners {
   padding: 2.25rem;
   h2 {
     font-size: 2rem;
@@ -13,7 +13,7 @@
 }
 
 .partners__card {
-  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
 }
 
 @include breakpoint('md') {
-  .partners {
+  #partners {
     padding: 5rem 4rem;
     h2 {
       font-size: 2.5rem;
@@ -54,7 +54,7 @@
 }
 
 @include breakpoint('lg') {
-  .partners {
+  #partners {
     padding-left: 0;
     padding-right: 0;
   }
@@ -65,21 +65,21 @@
 }
 
 @include breakpoint('xl') {
-  .partners {
-    padding-left: 6rem;
-    padding-right: 6rem;
+  #partners {
     .partners__container {
-      width: 100%;
-      margin: 0;
+      width: 1200px;
+      margin: 0 auto;
     }
   }
   .partners__grid {
-    grid-template-columns: repeat(4, minmax(11em, 1fr));
-    font-size: 1.25rem;
-    row-gap: 1.25rem;
-    column-gap: 1.25rem;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    width: 100%;
+    font-size: 1.5rem;
     .partners__card {
-      height: 8em;
+      height: 9rem;
+      width: 100%;
     }
   }
 }
