@@ -1,0 +1,21 @@
+//- includes/partners.pug
+mixin card(href,src,alt)
+  a(href=href).bg-darkCharcoal.partners__card&attributes(attributes)
+    img(src=src, alt=alt).card__image
+
+section.partners.bg-royalBlue
+  .partners__container
+    h2.font-bold Nuestros Partners.
+    .partners__grid
+      +card("#", "assets/img/partners/gleo.png", "Gleo").partners__card--md
+      +card("#", "assets/img/partners/yellowme.svg", "Yellowme")
+      +card("#", "assets/img/partners/uady.png", "Uady")
+      +card("#", "assets/img/partners/encora.svg", "Encora").partners__card--lg
+      +card("#", "assets/img/partners/salesforce.png", "Salesforce")
+      +card("#", "assets/img/partners/checa.svg", "Checa")
+      +card("#", "assets/img/partners/soldai.svg", "Soldai")
+      +card("#", "assets/img/partners/coati.svg", "Coati").partners__card--sm
+      +card("#", "assets/img/partners/walook.png", "Walook")
+      +card("#", "assets/img/partners/women_code.png", "Women who code")
+      +card("#", "assets/img/partners/cubicode.png", "Cubicode")
+      +card("#", "assets/img/partners/dealergeek.png", "Dealergeek")

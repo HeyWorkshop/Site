@@ -10,8 +10,12 @@
     "build-pug": "pug ./src/index.pug -o ./dist/",
     "dev-sass": "node-sass -w ./src/scss -o ./dist/assets/css",
     "build-sass": "node-sass ./src/scss -o ./dist/assets/css --output-style compressed",
+    "add": "git add .",
+    "commit": "gitmoji -c",
+    "push": "git push origin landing2021",
     "dev": "npm-run-all -s msg -p dev-sass dev-pug",
-    "build": "npm-run-all -s msg-1 build-sass build-pug"
+    "build": "npm-run-all -s msg-1 build-sass build-pug",
+    "done": "npm-run-all -s build add commit push"
   },
   "repository": {
     "type": "git",
