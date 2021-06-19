@@ -1,0 +1,64 @@
+section#team {
+  padding: 2.25rem;
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .team__list {
+    margin-top: 1rem;
+  }
+}
+
+.card {
+  background: $darkCharcoal;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-width: 185px;
+  max-width: 300px;
+  gap: 1rem;
+  .card__name {
+    font-weight: 500;
+  }
+  .card__image {
+    align-self: center;
+    background: white;
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+}
+
+.card__right {
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+}
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card__role {
+  background-color: rgba($wildWatermelon, 0.1);
+  color: $wildWatermelon;
+  display: inline-flex;
+  max-width: max-content;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 0.25em 0.5em;
+  text-align: center;
+  gap: 0.25em;
+  .bi {
+    align-self: center;
+  }
+}
+.card__contact {
+  font-size: 0.75rem;
+  display: flex;
+  gap: 0.85rem;
+}

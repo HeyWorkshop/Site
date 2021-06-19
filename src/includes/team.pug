@@ -1,0 +1,20 @@
+mixin card(name)
+  .card
+    .card__image
+    .card__right
+      p.card__name=name
+      .card__description
+        .card__role
+          .bi.bi-lightbulb
+          p Community Manager
+        .card__contact
+          a.button.button--icon.bi.bi-github
+          a.button.button--icon.bi.bi-globe
+          a.button.button--icon.bi.bi-linkedin
+
+section#team
+  h2.font-bold Nuestro 
+    span.text-wildWatermelon Equipo
+    | .
+  .team__list
+    +card("Geovanna de la Cruz Medina")

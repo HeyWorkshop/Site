@@ -5,14 +5,14 @@ section#internship {
   // FLEX-BOX
   display: flex;
   flex-direction: column;
+  padding: 2.25rem;
 
   .text {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     line-height: 110%;
-    width: 100%;
     align-self: center;
     h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 700;
       padding: 20px 0px;
     }
@@ -31,14 +31,17 @@ section#internship {
     padding: 0 5rem;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
+
     .text {
-      font-size: 1.8rem;
+      margin: 0 auto;
+      font-size: 1.4rem;
       h2 {
         font-size: 2.5rem;
       }
     }
     img {
-      width: 400px;
+      width: 17rem;
       height: auto;
       padding-top: 30px;
     }
@@ -47,25 +50,23 @@ section#internship {
 
 @include breakpoint("lg") {
   section#internship {
-    .text {
-      font-size: 1.7rem;
-      width: 870px;
-      h2 {
-        font-size: 2.4rem;
-      }
-    }
+    padding: 0;
+    width: 870px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @include breakpoint("xl") {
   section#internship {
-    flex-direction: column;
+    flex-direction: row;
+    width: 1200px;
     .text {
-      font-size: 2.5rem;
-      width: 1000px;
-      h2 {
-        font-size: 3rem;
-      }
+      margin-left: 3rem;
+      font-size: 1.8rem;
+    }
+    img {
+      width: 22rem;
     }
   }
 }
