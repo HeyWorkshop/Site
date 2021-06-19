@@ -1,39 +1,47 @@
 section#main {
-  height: auto;
-  background: url(../img/Sally.svg) no-repeat;
-  main {
-    padding: 5% 1rem;
+  box-sizing: border-box;
+  .solid__Sally {
+    display: none;
+  }
+  .main__left {
     position: relative;
-    .main__left {
-      margin: 0 10%;
+    padding: 8% 2rem 6rem 2rem;
+    height: auto;
+    .transparent__Sally {
+      position: absolute;
+      z-index: 0;
+      right: 0.4rem;
+      bottom: 0.5rem;
+      width: 200px;
       height: auto;
+      opacity: 0.1;
+    }
 
-      h1 {
-        font-size: 2.4rem;
-        font-weight: 600;
-        padding: 20px 0;
+    .main__title {
+      font-size: 3rem;
+      font-weight: 600;
+      padding: 20px 0;
+    }
+    .main__message {
+      font-size: 1rem;
+      line-height: 1.2;
+      margin-bottom: 25px;
+    }
+    a {
+      border-radius: 0.85em;
+      padding: 15px 20px;
+      font-weight: 700;
+      -webkit-tap-highlight-color: transparent;
+      background: rgba(royalBlue, 0.05);
+      color: royalblue;
+      transition: background-color 0.3s, color 0.3s, box-shadow 0.05s;
+      display: inline-block;
+      &:hover {
+        background: royalblue;
+        color: $offWhite;
       }
-      p {
-        font-size: 0.9rem;
-        line-height: 120%;
-        padding-bottom: 25px;
-      }
-      a {
-        justify-content: center;
-        padding: 10px 20px;
-        font-weight: 700;
-        -webkit-tap-highlight-color: transparent;
-        background: rgba(royalBlue, 0.1);
-        color: royalblue;
-        transition: background-color 0.1s, color 0.1s, box-shadow 0.05s;
-        display: inline-block;
-        &:hover {
-          background: royalblue;
-          color: $offWhite;
-        }
-        &:active {
-          box-shadow: 0 0 0 2px $offWhite;
-        }
+      &:active {
+        box-shadow: 0 0 0 2px $offWhite;
       }
     }
   }
@@ -41,29 +49,28 @@ section#main {
 
 @include breakpoint("md") {
   section#main {
-    background-image: none;
-    main {
+    margin: 0 2rem;
+    .transparent__Sally {
+      display: none;
+    }
+    .main {
       display: flex;
       justify-content: space-between;
-      margin: 0 2rem;
-      padding: 5% 2rem;
-
       .main__left {
-        width: 40%;
-        margin: 10% 0;
-        h1 {
-          font-size: 5rem;
+        width: 50%;
+        .main__title {
+          font-size: 4rem;
         }
-        p {
-          font-size: 1.1rem;
+        .main__message {
+          font-size: 1.2rem;
+          width: 95%;
         }
       }
-      img {
-        //  display: block;
-        padding: 5%;
+      .solid__Sally {
+        display: inline-flex;
+        max-width: 250px;
         opacity: 1;
         transition: ease 0.4s;
-        width: 30%;
         min-width: 200px;
         height: auto;
         &:hover {
@@ -75,7 +82,39 @@ section#main {
   }
 }
 
+@include breakpoint("lg") {
+  section#main .main {
+    .main__left {
+      .main__title {
+        font-size: 5rem;
+      }
+      .main__message {
+        font-size: 1.3rem;
+      }
+      a {
+        font-size: 1.4rem;
+      }
+    }
+    .solid__Sally {
+      max-width: 300px;
+    }
+  }
+}
+
 @include breakpoint("xl") {
-  // section#main {
-  // }
+  section#main .main {
+    margin: 0 auto;
+    width: 1100px;
+    .main__left {
+      .main__title {
+        font-size: 6rem;
+      }
+      .main__message {
+        font-size: 1.7rem;
+      }
+    }
+    .solid__Sally {
+      max-width: 300px;
+    }
+  }
 }

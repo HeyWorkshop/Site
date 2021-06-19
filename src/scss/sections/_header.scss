@@ -1,19 +1,29 @@
 section#header {
   header {
-    padding: 2.25rem 3rem;
-    // display: inline;
+    padding: 1.5rem 3rem 2.25rem 3rem;
+    display: flex;
     justify-content: space-between;
-    .header__logo img {
-      align-self: center;
-      width: 30px;
-      height: auto;
-    }
-    nav {
-      .nav__desktop {
-        display: none;
+    .header__logo {
+      display: flex;
+      align-content: center;
+      img {
+        margin: auto 0;
+        width: 30px;
+        height: 30px;
       }
+    }
 
-      .nav__mobile {
+    .nav__desktop {
+      display: none;
+    }
+
+    .nav__mobile {
+      .nav__rigth img {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+      }
+      .overlay {
         display: none;
       }
     }
@@ -22,35 +32,53 @@ section#header {
 
 @include breakpoint("md") {
   section#header {
-    background-image: none;
     header {
-      padding: 2.25rem 3rem;
-      display: flex;
-      justify-content: space-between;
-      .header__logo img {
-        align-self: center;
-        width: 30px;
-        height: auto;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        .nav__desktop {
-          display: inline-block;
+      .nav__desktop {
+        display: inline-flex;
+        .button--text {
+          padding: 1rem 1.2rem;
         }
-        a {
-          padding: 1rem 1.5rem;
-          font-weight: 600;
-          &:not(:first-child):not(:last-child) {
-            color: white;
-          }
+      }
+      .nav__mobile {
+        display: none;
+      }
+      a {
+        padding: 1rem 1.2rem;
+        border-radius: 0.85em;
+        font-size: 0.9rem;
+
+        font-weight: 600;
+        &:not(:first-child):not(:last-child) {
+          color: white;
+        }
+        &:not(:last-child) {
+          transition: 500ms ease-out;
+        }
+        &:not(:last-child):hover {
+          transition: 500ms ease-out;
+          transform: translateY(-5px);
         }
       }
     }
   }
 }
 
+@include breakpoint("lg") {
+  section#header header {
+    margin: 0 auto;
+    a {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
 @include breakpoint("xl") {
-  //   section#main {
-  //   }
+  section#header header {
+    max-width: 1150px;
+    a {
+      padding: 1rem 1.5rem;
+      font-size: 1.1rem;
+    }
+  }
 }
