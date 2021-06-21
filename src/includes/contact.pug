@@ -1,37 +1,37 @@
 //- includes/contact.pug
 mixin link(href, icon)
-  li&attributes(attributes)
-    a(href=href).button.button--icon
-      i&attributes({"class": "bi bi-"+icon})
+    li&attributes(attributes)
+        a(href=href).button.button--icon
+            i&attributes({"class": "bi bi-"+icon})
 
 mixin link-text(href, icon, text)
-  li&attributes(attributes)
-    a(href=href).button.button--text
-      i&attributes({"class": "bi bi-"+icon})
-      span=text
+    li&attributes(attributes)
+        a(href=href).button.button--text
+            i&attributes({"class": "bi bi-"+icon})
+            span=text
 
 section.contact#contact
-  .contact__container
-    .contact__header
-    .contact__main
-      p.contact__message
-        | ¿Te gustaría dar un 
-        span.text-royalBlue taller
-        | ? ¿Ser parte del 
-        span.text-wildWatermelon equipo
-        | ? ¿O participar en alguna de nuestras actividades? No dudes en ponerte en 
-        span.font-bold contacto 
-        | con nosotros.
-      ul.contact__linksList
-        +link("#", "github").item1
-        +link("#", "instagram").item2
-        +link("#", "linkedin").item3
-        +link("#", "facebook").item4
-        +link-text("#", "envelope", "Envíanos un correo").item5
-        +link("#", "envelope").item6
-    .contact__footer
-      p.font-bold
-        span.text-royalBlue Developed
-        |  and 
-        span.text-wildWatermelon Designed
-        |  by Workshop team
+    .contact__container
+        .contact__header
+        .contact__main
+            p.contact__message
+                | ¿Te gustaría dar un 
+                span.text-royalBlue taller
+                | ? ¿Ser parte del 
+                span.text-wildWatermelon equipo
+                | ? ¿O participar en alguna de nuestras actividades? No dudes en ponerte en 
+                span.font-bold contacto 
+                | con nosotros.
+            ul.contact__linksList
+                +link("#", "github").item1
+                +link("#", "instagram").item2
+                +link("#", "linkedin").item3
+                +link("#", "facebook").item4
+                +link-text("#", "envelope", "Envíanos un correo").item5
+                +link("#", "envelope").item6
+        .contact__footer
+            p.font-bold
+                span.text-royalBlue Developed
+                |  and 
+                span.text-wildWatermelon Designed
+                |  by Workshop team
