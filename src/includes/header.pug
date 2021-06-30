@@ -16,8 +16,14 @@ section#header.b-blackRussian
                 img(src="./assets/img/Burguer.svg", alt="Menu/Navegación")
             .overlay
                 .overlay__content
-                    a.text-wildWatermelon(href="#inicio") Inicio
-                    a(href="#internship") Internship
-                    a(href=".partners") Partners
-                    a(href="#nosotros") Nosotros
-                    a.button.button--text(href=".contact") Contacto
+                    .overlay__header 
+                        .overlay__logo
+                            img(src="./assets/img/Logo.svg", alt="Workshop")
+                        .overlay__close 
+                            img(src="./assets/img/Cross.svg", alt="Close button")
+                    .overlay__links
+                        a(href="#inicio") Inicio
+                        a(href="#internship") Internship
+                        a(href="#partners") Partners
+                        a(href="#nosotros") Nosotros
+                        a(href="#contact") Contacto
