@@ -1,16 +1,70 @@
-mixin card(name)
+- 
+    var team = [
+        {
+            name: "Manuel Antonio Cituk Martínez",
+            role: "member lol",
+            github: "https://es.wikipedia.org/wiki/A",
+            web_mail: "mailto:tonycituk@gmail.com",
+            linkedin: "https://www.linkedin.com/in/antonio-cituk-775b12209"
+        },
+        {
+            name: "Jorge Teodoro Dawn Rodriguez",
+            role: "member lol"
+        },
+        {
+            name: "Miguel Rodrigo Ávila Cabrera",
+            role: "member lol"
+        },
+        {
+            name: "Edwin Alonso Andrade Ac",
+            role: "member lol"
+        },
+        {
+            name: "Geovanna Fernanda De la cruz Medina",
+            role: "member lol"
+        },
+        {
+            name: "Verónica Marilyn Rivera Manzanero",
+            role: "member lol"
+        },
+        {
+            name: "Fernan Enrique Cetina Escalante",
+            role: "member lol"
+        },
+        {
+            name: "Mario Jesús Chan Zurita",
+            role: "member lol"
+        },
+        {
+            name: "Isaac Mauricio Ehuan Avila",
+            role: "member lol"
+        },
+        {
+            name: "Daniel Pliego Vega",
+            role: "member lol"
+        },
+        {
+            name: "Rodrigo Castrejon Cervantes",
+            role: "member lol"
+        }]
+
+
+mixin card(member)
     .card
         .card__image
         .card__right
-            p.card__name=name
+            p.card__name= member.name
             .card__description
                 .card__role
                     .bi.bi-lightbulb
-                    p Community Manager
+                    p= member.role
                 .card__contact
-                    a.button.button--icon.bi.bi-github
-                    a.button.button--icon.bi.bi-globe
-                    a.button.button--icon.bi.bi-linkedin
+                    if member.github
+                        a.button.button--icon.bi.bi-github(href=member.github)
+                    if member.web_mail
+                        a.button.button--icon.bi.bi-globe(href=member.web_mail)
+                    if member.linkedin
+                        a.button.button--icon.bi.bi-linkedin(href=member.linkedin)
 
 section#team
     .team__container
@@ -18,19 +72,17 @@ section#team
             span.text-wildWatermelon Equipo
             | .
         .team__list
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
-            +card("Geovanna de la Cruz Medina")
+            each member in team
+                +card(member)
+    #workshop-team-slider.splide
+        .splide__track 
+            ul.splide__list 
+                li.splide__slide 
+                    each member in team.slice(0, 4)
+                        +card(member)
+                li.splide__slide 
+                    each member in team.slice(4, 8)
+                        +card(member)
+                li.splide__slide 
+                    each member in team.slice(8, 12)
+                        +card(member)

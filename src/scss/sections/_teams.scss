@@ -6,7 +6,7 @@ section#team {
   }
   .team__list {
     margin-top: 2.25rem;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     gap: 1.25rem;
     justify-content: center;
@@ -19,8 +19,7 @@ section#team {
   display: flex;
   padding: 1rem;
   border-radius: 1rem;
-  min-width: 185px;
-  max-width: 300px;
+  width: 300px;
   gap: 1rem;
   .card__name {
     font-weight: 500;
@@ -73,6 +72,15 @@ section#team {
     h2 {
       font-size: 2.5rem;
     }
+    .team__list {
+      display: flex;
+      .card {
+        width: 270px;
+      }
+    }
+  }
+  #workshop-team-slider.splide {
+    display: none;
   }
 }
 
@@ -80,6 +88,12 @@ section#team {
   section#team {
     padding-left: 0;
     padding-right: 0;
+    .team__list {
+      display: flex;
+      .card {
+        width: 300px;
+      }
+    }
   }
   .team__container {
     width: 900px;
@@ -94,4 +108,29 @@ section#team {
       margin: 0 auto;
     }
   }
+}
+
+#workshop-team-slider.splide ul {
+  align-content: space-around;
+  .card {
+    //margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
+//Splide elements
+.splide {
+  margin: 5rem 0;
+}
+.splide__arrows {
+  display: none;
+}
+.splide__pagination {
+  display: none !important;
 }
