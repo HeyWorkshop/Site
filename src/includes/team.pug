@@ -5,11 +5,13 @@
             role: "member lol",
             github: "https://es.wikipedia.org/wiki/A",
             web_mail: "mailto:tonycituk@gmail.com",
-            linkedin: "https://www.linkedin.com/in/antonio-cituk-775b12209"
+            linkedin: "https://www.linkedin.com/in/antonio-cituk-775b12209",
+            img: "sphynx.png"
         },
         {
             name: "Jorge Teodoro Dawn Rodriguez",
-            role: "member lol"
+            role: "member lol",
+            img: "Sally-22.png"
         },
         {
             name: "Miguel Rodrigo Ávila Cabrera",
@@ -51,7 +53,7 @@
 
 mixin card(member)
     .card
-        .card__image
+        img.card__image(src='assets/img/team/'+member.img, alt=member.name)
         .card__right
             p.card__name= member.name
             .card__description

@@ -19,18 +19,22 @@ section#team {
   display: flex;
   padding: 1rem;
   border-radius: 1rem;
-  width: 300px;
+  width: 320px;
   gap: 1rem;
   .card__name {
     font-weight: 500;
   }
   .card__image {
     align-self: center;
-    background: white;
+    background: rgb(138, 138, 138);
     min-width: 80px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -75,6 +79,7 @@ section#team {
     .team__list {
       display: flex;
       .card {
+        min-width: none;
         width: 270px;
       }
     }
