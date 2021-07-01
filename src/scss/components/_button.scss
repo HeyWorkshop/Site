@@ -4,6 +4,7 @@
   color: $wildWatermelon;
   transition: background-color 0.1s, color 0.1s, box-shadow 0.05s;
   display: inline-block;
+  cursor: pointer;
   &:hover {
     background: $wildWatermelon;
     color: $offWhite;

@@ -5,7 +5,11 @@ section#team {
     font-weight: 700;
   }
   .team__list {
-    margin-top: 1rem;
+    margin-top: 2.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
   }
 }
 
@@ -61,4 +65,33 @@ section#team {
   font-size: 0.75rem;
   display: flex;
   gap: 0.85rem;
+}
+
+@include breakpoint("md") {
+  section#team {
+    padding: 5rem 4rem;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@include breakpoint("lg") {
+  section#team {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .team__container {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint("xl") {
+  section#team {
+    .team__container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
 }

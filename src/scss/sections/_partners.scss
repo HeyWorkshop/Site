@@ -36,9 +36,13 @@
   &--lg {
     padding: 0.8em;
   }
+  transition: transform 150ms;
+  &:hover {
+    transform: translatey(-0.5rem);
+  }
 }
 
-@include breakpoint('md') {
+@include breakpoint("md") {
   #partners {
     padding: 5rem 4rem;
     h2 {
@@ -53,7 +57,7 @@
   }
 }
 
-@include breakpoint('lg') {
+@include breakpoint("lg") {
   #partners {
     padding-left: 0;
     padding-right: 0;
@@ -64,7 +68,7 @@
   }
 }
 
-@include breakpoint('xl') {
+@include breakpoint("xl") {
   #partners {
     .partners__container {
       width: 1200px;
