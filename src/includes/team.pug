@@ -76,15 +76,18 @@ section#team
         .team__list
             each member in team
                 +card(member)
-    #workshop-team-slider.splide
-        .splide__track 
-            ul.splide__list 
-                li.splide__slide 
+#workshop-team-slider.splide
+    .splide__track 
+        ul.splide__list 
+            li.splide__slide 
+                .container
                     each member in team.slice(0, 4)
                         +card(member)
-                li.splide__slide 
+            li.splide__slide 
+                .container
                     each member in team.slice(4, 8)
                         +card(member)
-                li.splide__slide 
+            li.splide__slide 
+                .container
                     each member in team.slice(8, 12)
                         +card(member)

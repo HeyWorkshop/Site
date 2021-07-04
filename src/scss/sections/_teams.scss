@@ -19,7 +19,6 @@ section#team {
   display: flex;
   padding: 1rem;
   border-radius: 1rem;
-  width: 290px;
   gap: 1rem;
   .card__name {
     font-weight: 500;
@@ -117,15 +116,15 @@ section#team {
 
 #workshop-team-slider.splide ul {
   align-content: space-around;
-  .card {
-    //margin-top: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
   li {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+    .container {
+      max-width: 290px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding: 0 1rem;
+    }
   }
 }
 
