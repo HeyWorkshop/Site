@@ -84,6 +84,7 @@ section#main {
 
 @include breakpoint("lg") {
   section#main .main {
+    padding: 6rem 0;
     .main__left {
       .main__title {
         font-size: 5rem;
@@ -114,7 +115,7 @@ section#main {
       }
     }
     .solid__Sally {
-      max-width: 300px;
+      max-width: 350px;
     }
   }
 }

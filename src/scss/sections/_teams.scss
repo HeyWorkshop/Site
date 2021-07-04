@@ -25,6 +25,7 @@ section#team {
   }
   .card__image {
     align-self: center;
+    object-fit: cover;
     background: rgb(138, 138, 138);
     min-width: 80px;
     width: 80px;
