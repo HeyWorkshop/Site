@@ -1,0 +1,121 @@
+section#main {
+  box-sizing: border-box;
+  .solid__Sally {
+    display: none;
+  }
+  .main__left {
+    position: relative;
+    padding: 8% 2rem 6rem 2rem;
+    height: auto;
+    .transparent__Sally {
+      position: absolute;
+      z-index: 0;
+      right: 0.4rem;
+      bottom: 0.5rem;
+      width: 200px;
+      height: auto;
+      opacity: 0.1;
+    }
+
+    .main__title {
+      font-size: 3rem;
+      font-weight: 600;
+      padding: 20px 0;
+    }
+    .main__message {
+      font-size: 1rem;
+      line-height: 1.2;
+      margin-bottom: 25px;
+    }
+    a {
+      border-radius: 0.85em;
+      padding: 15px 20px;
+      font-weight: 700;
+      -webkit-tap-highlight-color: transparent;
+      background: rgba(royalBlue, 0.05);
+      color: royalblue;
+      transition: background-color 0.3s, color 0.3s, box-shadow 0.05s;
+      display: inline-block;
+      &:hover {
+        background: royalblue;
+        color: $offWhite;
+      }
+      &:active {
+        box-shadow: 0 0 0 2px $offWhite;
+      }
+    }
+  }
+}
+
+@include breakpoint("md") {
+  section#main {
+    margin: 0 2rem;
+    .transparent__Sally {
+      display: none;
+    }
+    .main {
+      display: flex;
+      justify-content: space-between;
+      .main__left {
+        width: 50%;
+        .main__title {
+          font-size: 4rem;
+        }
+        .main__message {
+          font-size: 1.2rem;
+          width: 95%;
+        }
+      }
+      .solid__Sally {
+        display: inline-flex;
+        max-width: 250px;
+        opacity: 1;
+        transition: ease 0.4s;
+        min-width: 200px;
+        height: auto;
+        &:hover {
+          transition: ease 0.4s;
+          transform: translate(0, -30px);
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint("lg") {
+  section#main .main {
+    padding: 6rem 0;
+    .main__left {
+      .main__title {
+        font-size: 5rem;
+      }
+      .main__message {
+        font-size: 1.3rem;
+      }
+      a {
+        font-size: 1.4rem;
+      }
+    }
+    .solid__Sally {
+      max-width: 300px;
+    }
+  }
+}
+
+@include breakpoint("xl") {
+  section#main .main {
+    margin: 0 auto;
+    width: 1100px;
+    .main__left {
+      .main__title {
+        font-size: 6rem;
+      }
+      .main__message {
+        font-size: 1.7rem;
+      }
+    }
+    .solid__Sally {
+      max-width: 350px;
+    }
+  }
+}

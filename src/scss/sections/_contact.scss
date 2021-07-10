@@ -1,0 +1,147 @@
+$-font-sm: 1.25rem;
+$-leading-sm: 1.25rem;
+$-font-md: 1.8rem;
+$-leading-md: 2rem;
+@mixin -gizmoSize($width) {
+  $ratio: 280px/169px;
+  width: $width;
+  height: $width * $ratio;
+}
+
+.contact {
+  position: relative;
+  padding: 2.25rem;
+  .contact__header,
+  .contact__footer {
+    display: none;
+  }
+  .contact__message {
+    font-size: $-font-sm;
+    line-height: $-leading-sm;
+  }
+  .contact__linksList {
+    margin: 2.25rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1rem;
+    max-width: 205px;
+    .item1 {
+      justify-self: start;
+    }
+    .item2,
+    .item3 {
+      justify-self: center;
+    }
+    .item4 {
+      justify-self: end;
+    }
+    .item5 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+    .item6 {
+      display: none;
+    }
+  }
+  .button {
+    font-size: $-font-sm;
+    &--text {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@include breakpoint('md') {
+  .contact {
+    height: 100vh;
+    padding: 0 5rem;
+    // Setup initial overrides
+    .contact__linksList {
+      max-width: none;
+      .item6 {
+        display: list-item;
+      }
+      .item5 {
+        display: none;
+      }
+    }
+    // Start
+    .contact__container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact__header {
+      display: block;
+      flex: 1;
+    }
+    .contact__footer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: center;
+      p {
+        padding: 3rem 0;
+      }
+    }
+    .contact__message {
+      font-size: $-font-md;
+      line-height: $-leading-md;
+    }
+    .contact__linksList {
+      display: flex;
+      justify-content: space-around;
+      width: 400px;
+      margin-bottom: 0;
+    }
+    // Bottom left gizmo
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: url(../img/gizmo.svg);
+      z-index: -99;
+      @include -gizmoSize(70px);
+    }
+  }
+}
+
+@include breakpoint('lg') {
+  .contact {
+    .contact__container {
+      width: 870px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@include breakpoint('xl') {
+  .contact {
+    .contact__container {
+      width: 1000px;
+    }
+    .contact__message {
+      font-size: 2rem;
+      line-height: 110%;
+    }
+    .contact__linksList {
+      width: 60%;
+      margin-top: 3.75rem;
+      .button {
+        font-size: 1.8rem;
+      }
+    }
+    .contact__footer {
+      p {
+        font-size: $-font-sm;
+      }
+    }
+    &::before {
+      @include -gizmoSize(100px);
+    }
+  }
+}

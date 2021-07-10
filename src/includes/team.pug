@@ -1,0 +1,173 @@
+
+-
+    var team = [
+        {
+            name: "Miguel Rodrigo Ávila Cabrera",
+            role: "President",
+            github: "https://github.com/migueravila",
+            web_mail: "https://avila.codes",
+            linkedin: "https://www.linkedin.com/in/migueravila/",
+            img: "Miguel R. Ávila.png"
+        },
+        {
+            name: "Isabel Cámara Montalvo",
+            role: "Vice president",
+            github: "https://github.com/isabel-eng",
+            web_mail: "mailto:isabelmontalvo1993@gmail.com ",
+            linkedin: "https://www.linkedin.com/in/isabel-c%C3%A1mara-montalvo/",
+            img: "Isabel Cámara Montalvo.jpeg"
+        },
+        {
+            name: "Manuel Antonio Cituk Martínez",
+            role: "Leader Developer",
+            github: "https://github.com/Antonio-Cituk",
+            web_mail: "https://tony-cituk.web.app/",
+            linkedin: "https://www.linkedin.com/in/antonio-cituk-775b12209/",
+            img: "Antonio Cituk.png"
+        },
+        {
+            name: "Verónica Marilyn Rivera Manzanero",
+            role: "Event Director",
+            github: "https://github.com/ver0rivera",
+            web_mail: "mailto:veronicarivera.mr@gmail.com",
+            linkedin: "https://www.linkedin.com/in/ver%C3%B3nica-marilyn-rivera-manzanero-964064208/",
+            img: "Verónica Rivera.jpg"
+        },
+        {
+            name: "Geovanna Fernanda De la cruz Medina",
+            role: "Community Manager",
+            github: "https://github.com/Geovanna-med",
+            web_mail: "mailto:geovanna.medina@outlook.com ",
+            linkedin: "http://linkedin.com/in/geovanna-de-la-cruz-medina-5a69b51b8",
+            img: "Geovanna Medina.jpeg"
+        },
+        {
+            name: "Edwin Alonso Andrade Ac",
+            role: "Events team",
+            github: "https://github.com/Edwin-Lines",
+            web_mail: "mailto:alonsoandrade28@hotmail.com",
+            linkedin: "https://linkedin.com/in/edwin-alonso-andrade-ac-0885a21b7",
+            img: "Edwin Andrade.jpg"
+        },  
+        {
+            name: "Jorge Teodoro Dawn Rodriguez",
+            role: "Content team",
+            github: "https://github.com/Teodoro-lab",
+            web_mail: "mailto:teodawn.td@gmail.com",
+            linkedin: "https://www.linkedin.com/in/jorge-teodoro-dawn-rodriguez-b99aa71ab",
+            img: "Jorge Teo Dawn.jpg"
+        },
+        {
+            name: "Fernan Enrique Cetina Escalante",
+            role: "Content team",
+            github: "https://github.com/FernanCetinaE",
+            web_mail: "mailto:fecefarique@gmail.com",
+            img: "FariqueFece.jpeg"
+        },
+        {
+            name: "Mario Jesús Chan Zurita",
+            role: "Events team",
+            github: "https://github.com/MarioJChanZurita",
+            web_mail: "mailto:MarioJesusChanZurita@hotmail.com",
+            img: "Mario Jesús Chan Zurita.png"
+        },
+        {
+            name: "Isaac Mauricio Ehuan Avila",
+            role: "Events team",
+            github: "https://github.com/IsaacEhuan",
+            web_mail: "mailto:a17000553@alumnos.uady.mx",
+            linkedin: "https://www.linkedin.com/in/isaac-m-ehuan-a-a71516201/",
+            img: "Isaac M. Ehuan A.jpg"
+        },
+        {
+            name: "Daniel Pliego Vega",
+            role: "Events team",
+            github: "https://github.com/Daniel-Pliego",
+            linkedin: "https://www.linkedin.com/in/daniel-pliego-b3633b1b8",
+            img: "Daniel pliego.jpeg"
+        },
+        {
+            name: "Rodrigo Castrejon Cervantes",
+            role: "Content team",
+            github: "https://github.com/rodrigo-cst",
+            web_mail: "mailto:rodrigocastrejonc01@gmail.com",
+            linkedin: "https://www.linkedin.com/in/rodrigo-castrej%C3%B3n-42900b204/",
+            img: "Rodrigo Castrejón.jpeg"
+        },
+        {
+            name: "Luis Alberto Zapata Braga",
+            role: "Events team",
+            github: "https://github.com/Lichos17",
+            web_mail: "https://hopeful-lalande-661f25.netlify.app/",
+            linkedin: "https://www.linkedin.com/in/lichosmx/",
+            img: "Lichos Zapata.jpg"
+        },
+        {
+            name: "Jesús Alayón Domínguez",
+            role: "Content team",
+            github: "https://github.com/JesusAlayonD",
+            web_mail: "mailto:jesusalayond@gmail.com",
+            linkedin: "https://www.linkedin.com/in/jesusalayond/",
+            img: "Jesús Alayón.jpg"
+        },
+        {
+            name: "Emiliano Valencia Guzmán",
+            role: "Events team",
+            github: "https://github.com/Greatvali",
+            web_mail: "mailto:evalencia142000@gmail.com",
+            linkedin: "https://linkedin.com/in/emiliano-valencia-7b2332134",
+            img: "Emiliano - Emiliano Valencia.jpg"
+        },
+        {
+            name: "Patricio A. Peña Ojeda",
+            role: "Events team",
+            github: "https://github.com/PatricioPena",
+            web_mail: "mailto:Patricio17po@gmail.com",
+            img: "Patricio Peña.jpg"
+        } 
+    ]
+
+mixin card(member)
+    .card
+        img.card__image(src='assets/img/team/'+member.img, alt=member.name)
+        .card__right
+            p.card__name= member.name
+            .card__description
+                .card__role
+                    .bi.bi-lightbulb
+                    p= member.role
+                .card__contact
+                    if member.github
+                        a.button.button--icon.bi.bi-github(href=member.github)
+                    if member.web_mail
+                        a.button.button--icon.bi.bi-globe(href=member.web_mail)
+                    if member.linkedin
+                        a.button.button--icon.bi.bi-linkedin(href=member.linkedin)
+
+section#team
+    .team__container
+        h2.font-bold Nuestro 
+            span.text-wildWatermelon Equipo
+            | .
+        .team__list
+            each member in team
+                +card(member)
+#workshop-team-slider.splide
+    .splide__track 
+        ul.splide__list 
+            li.splide__slide 
+                .container
+                    each member in team.slice(0, 4)
+                        +card(member)
+            li.splide__slide 
+                .container
+                    each member in team.slice(4, 8)
+                        +card(member)
+            li.splide__slide 
+                .container
+                    each member in team.slice(8, 12)
+                        +card(member)
+            li.splide__slide 
+                .container
+                    each member in team.slice(12, 16)
+                        +card(member)
