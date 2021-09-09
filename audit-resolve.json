@@ -1,0 +1,16 @@
+{
+  "decisions": {
+    "1643|pug": {
+      "decision": "ignore",
+      "madeAt": 1631149712289,
+      "expiresAt": 1633741694645
+    },
+    "1643|pug-cli>pug": {
+      "decision": "ignore",
+      "madeAt": 1631149712289,
+      "expiresAt": 1633741694645
+    }
+  },
+  "rules": {},
+  "version": 1
+}
