@@ -29,8 +29,9 @@
   },
   "homepage": "https://github.com/HeyWorkshop/Site#readme",
   "devDependencies": {
-    "node-sass": "^6.0.0",
+    "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.5",
+    "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
