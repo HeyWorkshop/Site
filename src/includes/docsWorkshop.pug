@@ -1,0 +1,13 @@
+//- includes/partners.pug
+mixin card(href,src,alt)
+    a(href=href).bg-darkCharcoal.partners__card&attributes(attributes)
+        img(src=src, alt=alt).card__image
+
+section.docsWorkshop#docsWorkshop
+    .partners__container
+        h2.font-bold Documentación.
+        .partners__grid
+            +card("https://bit.ly/3CARkYO","assets/img/workshopDetailedInfo/WeAreWorkshop.png","We are Workshop").partners__card--md
+            +card("https://bit.ly/3pZTZq6", "assets/img/workshopDetailedInfo/Sponsor.png", "Sponsorhip levels")
+            +card("https://bit.ly/3t56wKy","assets/img/workshopDetailedInfo/FestInformation.png","Fest information")
+            

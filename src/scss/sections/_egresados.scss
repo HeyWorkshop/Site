@@ -1,0 +1,142 @@
+section#teamEgresados {
+  padding: 2.25rem;
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .team__list {
+    margin-top: 2.25rem;
+    display: flex; //visibilidad del bloque || cuando se tenga la cantidad suficiente de egresados, poner: none
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+}
+
+.card {
+  background: $darkCharcoal;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  .card__name {
+    font-weight: 500;
+  }
+  .card__image {
+    align-self: center;
+    object-fit: cover;
+    background: rgb(138, 138, 138);
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.card__right {
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+}
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card__role {
+  background-color: rgba($wildWatermelon, 0.1);
+  color: $wildWatermelon;
+  display: inline-flex;
+  max-width: max-content;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 0.25em 0.5em;
+  text-align: center;
+  gap: 0.25em;
+  .bi {
+    align-self: center;
+  }
+}
+.card__contact {
+  font-size: 0.75rem;
+  display: flex;
+  gap: 0.85rem;
+}
+
+@include breakpoint("md") {
+  section#teamEgresados {
+    padding: 5rem 4rem;
+    h2 {
+      font-size: 2.5rem;
+    }
+    .team__list {
+      display: flex;
+      max-width: none;
+      .card {
+        min-width: none;
+        width: 270px;
+      }
+    }
+  }
+  #workshop-egresados-slider.splide {
+    display: none;
+  }
+}
+
+@include breakpoint("lg") {
+  section#teamEgresados {
+    padding-left: 0;
+    padding-right: 0;
+    .team__list {
+      display: flex;
+      .card {
+        width: 300px;
+      }
+    }
+  }
+  .team__container {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint("xl") {
+  section#teamEgresados {
+    .team__container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+}
+
+#workshop-egresados-slider.splide ul {
+  align-content: space-around;
+  li {
+    .container {
+      max-width: 290px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding: 0 1rem;
+    }
+  }
+}
+
+//Splide elements
+.splide {
+  margin: 5rem 0;
+}
+.splide__arrows {
+  display: none;
+}
+.splide__pagination {
+  display: none !important;
+}

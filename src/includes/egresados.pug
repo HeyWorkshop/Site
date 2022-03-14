@@ -57,7 +57,7 @@ mixin card(member)
                     if member.linkedin
                         a.button.button--icon.bi.bi-linkedin(href=member.linkedin)
 
-section#team
+section.teamEgresados#teamEgresados
     .team__container
         h2.font-bold Nuestros 
             span.text-royalBlue Egresados
@@ -65,7 +65,8 @@ section#team
         .team__list
             each member in team
                 +card(member)
-#workshop-team-slider.splide
+//-Cuando se tengan suficientes egresados, se debe descomentar la seccion de abajo
+//-#workshop-egresados-slider.splide
     .splide__track 
         ul.splide__list 
             li.splide__slide 
@@ -75,12 +76,4 @@ section#team
             li.splide__slide 
                 .container
                     each member in team.slice(4, 8)
-                        +card(member)
-            li.splide__slide 
-                .container
-                    each member in team.slice(8, 12)
-                        +card(member)
-            li.splide__slide 
-                .container
-                    each member in team.slice(12, 16)
                         +card(member)
