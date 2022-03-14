@@ -6,7 +6,7 @@ section#teamEgresados {
   }
   .team__list {
     margin-top: 2.25rem;
-    display: flex; //visibilidad del bloque || cuando se tenga la cantidad suficiente de egresados, poner: none
+    display: grid; //visibilidad del bloque || cuando se tenga la cantidad suficiente de egresados, poner: none
     flex-wrap: wrap;
     gap: 1.25rem;
     justify-content: center;
