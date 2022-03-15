@@ -10,6 +10,10 @@ mixin link-text(href, icon, text)
             i&attributes({"class": "bi bi-"+icon})
             span=text
 
+mixin card(href,src,alt)
+    a(href=href).bg-darkCharcoal.contact__card&attributes(attributes)
+        img(src=src, alt=alt).card__image
+
 section.contact#contact
     .contact__container
         .contact__header
