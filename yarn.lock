@@ -24,14 +24,14 @@
     "js-tokens" "^4.0.0"
 
 "@babel/parser@^7.6.0", "@babel/parser@^7.9.6":
-  "integrity" "sha512-2hQstc6I7T6tQsWzlboMh3SgMRPaS4H6H7cPQsJkdzTzEGqQrpLDsE2BGASU5sBPoEQyHzeqU6C8uKbFeEk6sg=="
-  "resolved" "https://registry.npmjs.org/@babel/parser/-/parser-7.15.5.tgz"
-  "version" "7.15.5"
+  "integrity" "sha512-BRYa3wcQnjS/nqI8Ac94pYYpJfojHVvVXJ97+IDCImX4Jc8W8Xv1+47enbruk+q1etOpsQNwnfFcNGw+gtPGxA=="
+  "resolved" "https://registry.npmjs.org/@babel/parser/-/parser-7.15.8.tgz"
+  "version" "7.15.8"
 
 "@babel/types@^7.6.1", "@babel/types@^7.9.6":
-  "integrity" "sha512-0f1HJFuGmmbrKTCZtbm3cU+b/AqdEYk5toj5iQur58xkVMlS0JWaKxTBSmCXd47uiN7vbcozAupm6Mvs80GNhw=="
-  "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.15.4.tgz"
-  "version" "7.15.4"
+  "integrity" "sha512-BPU+7QhqNjmWyDO0/vitH/CuhpV8ZmK1wpKva8nuyNF5MJfuRNWMc+hc14+u9xT93kvykMdncrJT19h74uB1Ig=="
+  "resolved" "https://registry.npmjs.org/@babel/types/-/types-7.15.6.tgz"
+  "version" "7.15.6"
   dependencies:
     "@babel/helper-validator-identifier" "^7.14.9"
     "to-fast-properties" "^2.0.0"
