@@ -12,7 +12,7 @@
     "build-sass": "node-sass ./src/scss -o ./docs/assets/css --output-style compressed",
     "add": "git add .",
     "commit": "gitmoji -c",
-    "push": "git push origin landing2021",
+    "push": "git push origin dev",
     "dev": "npm-run-all -s msg -p dev-sass dev-pug",
     "build": "npm-run-all -s msg-1 build-sass build-pug",
     "done": "npm-run-all -s build add commit push"
