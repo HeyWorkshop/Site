@@ -1,0 +1,100 @@
+-
+    var team = [
+        {
+            name: "Mariam Guadalupe Moreno Farah",
+            role: "President",
+            web_mail: "mailto:morenomariam13@gmail.com",
+            img: "Mariam-Moreno.webp"
+        },
+        {
+            name: "Eyli Burguete Pech",
+            role: "Vice President",
+            github: "https://github.com/EyliBurguete",
+            web_mail: "mailto:eyliburguete@gmail.com",
+            img: "Eyli-Burguete.webp"
+        },
+        {
+            name: "Luis Cruz",
+            role: "Core content",
+            github: "https://github.com/isabel-eng",
+            web_mail: "mailto:isabelmontalvo1993@gmail.com ",
+            linkedin: "https://www.linkedin.com/in/isabel-c%C3%A1mara-montalvo/",
+            img: "Luis-Cruz.webp"
+        },
+        {
+            name: "Daniel Vallado",
+            role: "Core content",
+            web_mail: "mailto:erikaban14@gmail.com",
+            img: "Daniel-Vallado.webp"
+        }, 
+        {
+            name: "Esau Poot",
+            role: "Core content",
+            github: "https://github.com/rodrigo-cst",
+            web_mail: "mailto:rodrigocastrejonc01@gmail.com",
+            linkedin: "https://www.linkedin.com/in/rodrigo-castrej%C3%B3n-42900b204/",
+            img: "Esau-Poot.webp"
+        },
+        {
+            name: "Juan Trivellari",
+            role: "Core events",
+            github: "https://github.com/rodrigo-cst",
+            web_mail: "mailto:rodrigocastrejonc01@gmail.com",
+            linkedin: "https://www.linkedin.com/in/rodrigo-castrej%C3%B3n-42900b204/",
+            img: "Juan-Trivellari.webp"
+        },
+        {
+            name: "Pablo Gamboa Nieto",
+            role: "Core Devs",
+            github: "https://github.com/Pgamboan",
+            web_mail: "mailto:Pgamboan@hotmail.com",
+            linkedin: "https://www.linkedin.com/in/pablo-gamboa-nieto-47291521a",
+            img: "Pablo-Gamboa.webp"
+        },
+        {
+            name: "Luis Medina",
+            role: "Core Devs",
+            github: "https://github.com/Pgamboan",
+            web_mail: "mailto:Pgamboan@hotmail.com",
+            linkedin: "https://www.linkedin.com/in/pablo-gamboa-nieto-47291521a",
+            img: "Luis-Medina.webp"
+        }
+    ]
+
+mixin card(member)
+    .card
+        img.card__image(src='assets/img/core/'+member.img, alt=member.name)
+        .card__right
+            p.card__name= member.name
+            .card__description
+                .card__role
+                    .bi.bi-lightbulb
+                    p= member.role
+                .card__contact
+                    if member.github
+                        a.button.button--icon.bi.bi-github(href=member.github)
+                    if member.web_mail
+                        a.button.button--icon.bi.bi-globe(href=member.web_mail)
+                    if member.linkedin
+                        a.button.button--icon.bi.bi-linkedin(href=member.linkedin)
+
+section.teamCore#teamCore
+    .team__container
+        h2.font-bold Team
+            span.text-royalBlue  Core
+            | 
+        .team__list
+            each member in team
+                +card(member)
+//-Cuando se tengan suficientes egresados (cambiado a core), se debe descomentar la seccion de abajo
+//-#workshop-core-slider.splide
+    .splide__track 
+        ul.splide__list 
+            li.splide__slide 
+                .container
+                    each member in team.slice(0, 4)
+                        +card(member)
+            li.splide__slide 
+                .container
+                    each member in team.slice(4, 8)
+                        +card(member)
