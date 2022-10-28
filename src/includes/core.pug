@@ -1,5 +1,5 @@
 -
-    var team = [
+    var teamCore = [
         {
             name: "Mariam Guadalupe Moreno Farah",
             role: "President",
@@ -88,17 +88,17 @@ section.teamCore#teamCore
             span.text-royalBlue  Core
             | 
         .team__list
-            each member in team
+            each member in teamCore
                 +card(member)
-//-Cuando se tengan suficientes egresados (cambiado a core), se debe descomentar la seccion de abajo
-//-#workshop-core-slider.splide
+
+#workshop-team-core-slider.splide
     .splide__track 
         ul.splide__list 
             li.splide__slide 
                 .container
-                    each member in team.slice(0, 4)
+                    each member in teamCore.slice(0, 4)
                         +card(member)
             li.splide__slide 
                 .container
-                    each member in team.slice(4, 8)
+                    each member in teamCore.slice(4, 8)
                         +card(member)
