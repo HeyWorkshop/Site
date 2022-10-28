@@ -596,8 +596,10 @@ section#team {
         min-width: none;
         width: 270px; }
   #workshop-team-slider.splide {
+    display: none; }
+  #workshop-team-core-slider.splide {
     display: none; } }
-
+      
 @media (min-width: 1024px) {
   section#team {
     padding-left: 0;
@@ -624,6 +626,16 @@ section#team {
     flex-direction: column;
     gap: 1.25rem;
     padding: 0 1rem; }
+
+  #workshop-team-core-slider.splide ul {
+    align-content: space-around; }
+    #workshop-team-core-slider.splide ul li .container {
+      max-width: 290px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding: 0 1rem; }
 
 .splide {
   margin: 5rem 0; }
