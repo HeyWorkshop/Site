@@ -11,3 +11,7 @@ var SPLIDE_OPTIONS = {
 document.addEventListener('DOMContentLoaded', function () {
 	new Splide('#workshop-team-slider', SPLIDE_OPTIONS).mount();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+	new Splide('#workshop-team-core-slider', SPLIDE_OPTIONS).mount();
+});

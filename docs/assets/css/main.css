@@ -596,8 +596,10 @@ section#team {
         min-width: none;
         width: 270px; }
   #workshop-team-slider.splide {
+    display: none; }
+  #workshop-team-core-slider.splide {
     display: none; } }
-
+      
 @media (min-width: 1024px) {
   section#team {
     padding-left: 0;
@@ -624,6 +626,16 @@ section#team {
     flex-direction: column;
     gap: 1.25rem;
     padding: 0 1rem; }
+
+  #workshop-team-core-slider.splide ul {
+    align-content: space-around; }
+    #workshop-team-core-slider.splide ul li .container {
+      max-width: 290px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding: 0 1rem; }
 
 .splide {
   margin: 5rem 0; }
@@ -733,14 +745,14 @@ section#team {
     width: 100px;
     height: 165.68047px; } }
 
-section#teamEgresados {
+section#teamCore {
   padding: 2.25rem; }
-  section#teamEgresados h2 {
+  section#teamCore h2 {
     font-size: 2rem;
     font-weight: 700; }
-  section#teamEgresados .team__list {
+  section#teamCore .team__list {
     margin-top: 2.25rem;
-    display: grid;
+    display: none;
     flex-wrap: wrap;
     gap: 1.25rem;
     justify-content: center; }
@@ -797,39 +809,39 @@ section#teamEgresados {
   gap: 0.85rem; }
 
 @media (min-width: 768px) {
-  section#teamEgresados {
+  section#teamCore {
     padding: 5rem 4rem; }
-    section#teamEgresados h2 {
+    section#teamCore h2 {
       font-size: 2.5rem; }
-    section#teamEgresados .team__list {
+    section#teamCore .team__list {
       display: flex;
       max-width: none; }
-      section#teamEgresados .team__list .card {
+      section#teamCore .team__list .card {
         min-width: none;
         width: 270px; }
-  #workshop-egresados-slider.splide {
+  #workshop-core-slider.splide {
     display: none; } }
 
 @media (min-width: 1024px) {
-  section#teamEgresados {
+  section#teamCore {
     padding-left: 0;
     padding-right: 0; }
-    section#teamEgresados .team__list {
+    section#teamCore .team__list {
       display: flex; }
-      section#teamEgresados .team__list .card {
+      section#teamCore .team__list .card {
         width: 300px; }
   .team__container {
     width: 900px;
     margin: 0 auto; } }
 
 @media (min-width: 1280px) {
-  section#teamEgresados .team__container {
+  section#teamCore .team__container {
     width: 1200px;
     margin: 0 auto; } }
 
-#workshop-egresados-slider.splide ul {
+#workshop-core-slider.splide ul {
   align-content: space-around; }
-  #workshop-egresados-slider.splide ul li .container {
+  #workshop-core-slider.splide ul li .container {
     max-width: 290px;
     margin: 0 auto;
     display: flex;
@@ -845,71 +857,3 @@ section#teamEgresados {
 
 .splide__pagination {
   display: none !important; }
-
-#docsWorkshop {
-  padding: 2.25rem; }
-  #docsWorkshop h2 {
-    font-size: 2rem; }
-
-.partners__grid {
-  margin-top: 2.25rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(8.75em, 1fr));
-  row-gap: 1rem;
-  column-gap: 1rem; }
-
-.partners__card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.8em;
-  box-sizing: border-box;
-  width: 100%;
-  height: 5.625em;
-  transition: transform 150ms; }
-  .partners__card .card__image {
-    box-sizing: inherit;
-    object-fit: contain;
-    width: 6.875em;
-    height: 80%; }
-  .partners__card--sm {
-    padding: 1.8em; }
-  .partners__card--md {
-    padding: 1.25em; }
-  .partners__card--lg {
-    padding: 0.8em; }
-  .partners__card:hover {
-    transform: translatey(-0.5rem); }
-
-@media (min-width: 768px) {
-  #docsWorkshop {
-    padding: 5rem 4rem; }
-    #docsWorkshop h2 {
-      font-size: 2.5rem; }
-  .partners__grid {
-    grid-template-columns: repeat(auto-fill, minmax(11em, 1fr)); }
-    .partners__grid .partners__card {
-      height: 6em; } }
-
-@media (min-width: 1024px) {
-  #docsWorkshop {
-    padding-left: 0;
-    padding-right: 0; }
-  .partners__container {
-    width: 900px;
-    margin: 0 auto; } }
-
-@media (min-width: 1280px) {
-  #docsWorkshop .partners__container {
-    width: 1200px;
-    margin: 0 auto; }
-  .partners__grid {
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 2rem;
-    column-gap: 2rem;
-    width: 100%;
-    font-size: 1.5rem; }
-    .partners__grid .partners__card {
-      height: 9rem;
-      width: 100%; } }
