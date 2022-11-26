@@ -469,35 +469,32 @@ section#main {
       width: 100%; } }
 
 section#internship {
-    box-sizing: border-box;
-    height: auto;
-    padding: 5rem 5rem;
-    display: flex;
-    flex-direction: column;
-}
-section#internship .text {
+  box-sizing: border-box;
+  height: auto;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.25rem; }
+  section#internship .text {
     font-size: 1.25rem;
     line-height: 110%;
-    align-self: center;
-}
-section#internship .text h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 20px 0px;
-}
-section#internship img {
+    align-self: center; }
+    section#internship .text h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 20px 0px; }
+  section#internship img {
     align-self: center;
     width: 250px;
     height: auto;
-    padding: 1rem;
-}
+    padding: 1rem; }
 
 @media (min-width: 768px) {
   section#internship {
+    padding: 0 5rem;
     justify-content: center;
     align-items: center;
-    padding: 5rem 5rem;
-     }
+    padding: 5rem; }
     section#internship .text {
       margin: 0 auto;
       font-size: 1.4rem; }
@@ -510,23 +507,20 @@ section#internship img {
 
 @media (min-width: 1024px) {
   section#internship {
-    padding: 5rem 5rem;
+    padding: 0;
     width: 870px;
     margin-left: auto;
-    margin-right: auto; }
-  }
+    margin-right: auto; } }
 
 @media (min-width: 1280px) {
   section#internship {
     flex-direction: row;
-    width: 1200px;
-    padding: 5rem 5rem; }
+    width: 1200px; }
     section#internship .text {
       margin-left: 3rem;
       font-size: 1.8rem; }
     section#internship img {
-      width: 22rem; }
-}
+      width: 22rem; } }
 
 section#team {
   padding: 2.25rem; }
@@ -593,7 +587,7 @@ section#team {
 
 @media (min-width: 768px) {
   section#team {
-    padding: 0rem 4rem; }
+    padding: 5rem 4rem; }
     section#team h2 {
       font-size: 2.5rem; }
     section#team .team__list {
@@ -860,7 +854,7 @@ section#teamEgresados {
 .partners__grid {
   margin-top: 2.25rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(8.75em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(8.75em, 1fr));
   row-gap: 1rem;
   column-gap: 1rem; }
 
@@ -894,7 +888,7 @@ section#teamEgresados {
     #docsWorkshop h2 {
       font-size: 2.5rem; }
   .partners__grid {
-    grid-template-columns: repeat(3, minmax(11em, 1fr)); }
+    grid-template-columns: repeat(auto-fill, minmax(11em, 1fr)); }
     .partners__grid .partners__card {
       height: 6em; } }
 
@@ -911,7 +905,7 @@ section#teamEgresados {
     width: 1200px;
     margin: 0 auto; }
   .partners__grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 2rem;
     column-gap: 2rem;
     width: 100%;
